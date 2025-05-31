@@ -1,0 +1,45 @@
+{
+  "name": "study-path-monolith",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm:dev:client\" \"npm:dev:server\" \"npm:dev:ml\"",
+    "dev:client": "npm run dev --workspace=client",
+    "dev:server": "npm run dev --workspace=server",
+    "dev:ml": "cd ml-service && python -m flask run --port 5001",
+    "build": "concurrently \"npm:build:client\" \"npm:build:server\"",
+    "build:client": "npm run build --workspace=client",
+    "build:server": "npm run build --workspace=server",
+    "start": "npm run start --workspace=server",
+    "test": "concurrently \"npm:test:client\" \"npm:test:server\"",
+    "test:client": "npm run test --workspace=client",
+    "test:server": "npm run test --workspace=server",
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up",
+    "prepare": "husky install",
+    "size-report": "npx cost-of-modules --yarn --no-install"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^9.0.11",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}

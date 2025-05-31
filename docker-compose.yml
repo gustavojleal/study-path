@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_BASE_URL=http://api:5000
+    depends_on:
+      - api
+
+  api:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - ML_SERVICE_URL=http://ml-service:5001
+      - MONGODB_URI=mongodb://mongodb:27017/studypath
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - ml-service
+      - mongodb
+      - redis
+
+  ml-service:
+    build: ./ml-service
+    ports:
+      - "5001:5001"
+    environment:
+      - FLASK_ENV=production
+      - MODEL_PATH=/app/models/recommender.pkl
+
+  mongodb:
+    image: mongo:7.0
+    volumes:
+      - mongodb-data:/data/db
+
+  redis:
+    image: redis:7.0-alpine
+
+volumes:
+  mongodb-data:
