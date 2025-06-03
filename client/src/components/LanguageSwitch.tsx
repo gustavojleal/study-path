@@ -88,8 +88,16 @@ const LanguageSwitch = ({
               aria-selected={lang.code === currentLanguage.code}
             >
               <div className="language-icon">
-                {lang.flag && <span>{lang.flag}</span>}
-                <span>{lang.name}</span>
+
+                {lang.flag && (<span>
+                  <img
+                    src={`https://flagcdn.com/${lang.flag}.svg`}
+                    style={{ marginRight: 8, verticalAlign: 'middle', width: 20 }}
+
+                  />
+                </span>)}
+
+                <>{lang.name}</>
               </div>
               {lang.code === currentLanguage.code && <Check size={16} />}
             </button>

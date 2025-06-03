@@ -1,4 +1,38 @@
 {
   "welcome": "Welcome to Study Path",
-  "login": "Login"
+  "login": "Login",
+  "text": "This is the main landing page of our application.",
+  "header": {
+    "title": "Study Path",
+    "subtitle": "Your learning journey starts here",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact",
+      "courses": "Courses"
+    }
+  },
+  "home": {
+    "title": "Home",
+    "description": "This is the home page of our application."
+  },
+  "about": {
+    "title": "About",
+    "description": "This page contains information about our application."
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "This page contains contact information."
+  },
+  "error": {
+    "notFound": "Page not found",
+    "serverError": "Internal server error"
+  },
+  "footer": {
+    "text": "© 2023 Study Path. All rights reserved."
+  },
+  "courses": {
+    "title": "Courses",
+    "description": "Explore our wide range of courses designed to help you learn and grow."
+  }
 }

@@ -4,7 +4,6 @@ import MainLayout from '@/app/layouts/MainLayout';
 import HomePage from '@/pages/HomePage';
 import AboutPage from '@/pages/AboutPage';
 import CoursesPage from '@/pages/CoursesPage';
-import LangueSwitch from '@/components/LangueSwitch';
 
 const router = createBrowserRouter([
   {
@@ -16,17 +15,18 @@ const router = createBrowserRouter([
         element: <HomePage />
       },
       {
-        path: 'about',
+        path: 'homepage',
+        element: <HomePage />
+      },
+      {
+        path: 'aboutpage',
         element: <AboutPage />
       },
       {
-        path: 'courses',
+        path: 'coursespage',
         element: <CoursesPage />
       },
-      {
-        path: 'langue-switch',
-        element: <LangueSwitch />
-      }
+
     ]
   }
 ]);

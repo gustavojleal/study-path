@@ -5,12 +5,23 @@
 }
 
 /* Botão principal */
+.language-button .language-icon span {
+  display: none;
+  transition: opacity 0.2s;
+}
+
+.language-button:hover .language-icon span,
+.language-button:focus .language-icon span {
+  display: inline;
+  opacity: 1;
+}
+
 .language-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
-  padding: 8px 12px;
+  gap: 3px;
+  padding: 8px 8px;
   background-color: white;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -106,7 +117,7 @@
 .language-icon {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 3px;
 }
 
 /* Modo escuro (opcional) */

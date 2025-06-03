@@ -1,4 +1,38 @@
 {
   "welcome": "Bem-vindo ao Study Path",
-  "login": "Entrar"
+  "login": "Entrar",
+  "text": "Essa é a landing page da aplicacao.",
+  "header": {
+    "title": "Study Path",
+    "subtitle": "Sua jornada de aprendizado começa aqui",
+    "links": {
+      "home": "Início",
+      "about": "Sobre",
+      "contact": "Contato",
+      "courses": "Cursos"
+    }
+  },
+  "home": {
+    "title": "Início",
+    "description": "Esta é a página inicial da nossa aplicação."
+  },
+  "about": {
+    "title": "Sobre",
+    "description": "Esta página contém informações sobre nossa aplicação."
+  },
+  "contact": {
+    "title": "Contato",
+    "description": "Esta página contém informações de contato."
+  },
+  "error": {
+    "notFound": "Página não encontrada",
+    "serverError": "Erro interno do servidor"
+  },
+  "footer": {
+    "text": "© 2023 Study Path. Todos os direitos reservados."
+  },
+  "courses": {
+    "title": "Cursos",
+    "description": "Explore nossa ampla gama de cursos projetados para ajudá-lo a aprender e crescer."
+  }
 }

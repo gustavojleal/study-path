@@ -1,36 +1,42 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import Search from './Search';
 import LanguageSwitch from './LanguageSwitch';
 
+
+
 const NavBar = () => {
+  const { i18n, t } = useTranslation();
   const languages = [
-    { code: 'en', name: 'English', flag: '🇺🇸' },
-    { code: 'pt', name: 'Português', flag: '🇧🇷' },
-    { code: 'es', name: 'Español', flag: '🇪🇸' },
-    { code: 'fr', name: 'Français', flag: '🇫🇷' },
-    { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+    { code: 'en', name: 'English', flag: 'us' },
+    { code: 'pt', name: 'Português', flag: 'br' },
+    { code: 'es', name: 'Español', flag: 'es' },
+    { code: 'fr', name: 'Français', flag: 'fr' },
   ];
 
   const handleLanguageChange = (langCode: string) => {
-    console.log('Idioma selecionado:', langCode);
-    // Aqui você implementaria a mudança de idioma
-    // Ex: i18n.changeLanguage(langCode)
+    i18n.changeLanguage(langCode);
   };
   return (
     <div>
 
-      <nav>
+      <nav className="navbar">
         <ul>
-          <li><Link to="/HomePage">Home</Link></li>
-          <li><Link to="/AboutPage">About</Link></li>
-          <li><Link to="/CoursesPage">Courses</Link></li>
+          <li><Link to="/HomePage">Study Path</Link></li>
+          <li><Link to="/CoursesPage">{t("header.links.courses")}</Link></li>
+          <li className="search-courses"><Search /></li>
+          <li className="language-switch-container">
+            <LanguageSwitch
+              languages={languages}
+              initialLanguage="pt"
+              onChange={handleLanguageChange}
+              position="bottom-right"
+            />
+
+          </li>
         </ul>
       </nav>
-      <LanguageSwitch
-        languages={languages}
-        initialLanguage="pt"
-        onChange={handleLanguageChange}
-        position="bottom-right"
-      />
     </div>
   )
 }
