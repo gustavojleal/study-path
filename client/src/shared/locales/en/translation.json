@@ -10,6 +10,10 @@
       "about": "About",
       "contact": "Contact",
       "courses": "Courses"
+    },
+    "search": {
+      "placeholder": "Search courses...",
+      "arialLabel": "Search courses"
     }
   },
   "home": {

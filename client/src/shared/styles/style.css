@@ -24,7 +24,53 @@ body {
   z-index: 1000;
 }
 
-/* Cabeçalho moderno */
+.search-courses {
+  display: flex;
+  align-items: center;
+  flex: 1 1 350px;
+  max-width: 420px;
+  margin: 0 1rem;
+  position: relative;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e0e4ea;
+  box-shadow: 0 1px 4px rgba(100, 100, 150, 0.04);
+  padding: 0 0.5rem;
+}
+
+.search-icon {
+  color: #6a82fb;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  padding: 0.6rem 0;
+  width: 100%;
+}
+
+.search-input-wrapper form,
+.search-input-wrapper form button,
+.search-input-wrapper form input {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .mainheader {
   width: 96vw;
   max-width: 1400px;
@@ -37,6 +83,7 @@ body {
   box-shadow: 0 2px 8px rgba(100, 100, 150, 0.04);
   border-bottom: 1px solid #e0e4ea;
   position: relative;
+  align-items: left;
 }
 
 .mainheader img {
@@ -48,32 +95,11 @@ body {
   margin-bottom: 12px;
 }
 
-.search-courses {
-  display: flex;
-  align-items: center;
-  margin: 0 1rem;
-  flex: 1 1 300px;
-  max-width: 400px;
-}
 
-.search-courses input[type="text"],
-.search-courses input[type="search"] {
-  width: 100%;
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
-  border: 1px solid #e0e4ea;
-  font-size: 1.1rem;
-  background: #fff;
-  transition: border 0.2s, box-shadow 0.2s;
-  box-shadow: 0 1px 4px rgba(100, 100, 150, 0.04);
-}
 
-.search-courses input[type="text"]:focus,
-.search-courses input[type="search"]:focus {
-  border-color: #6a82fb;
-  outline: none;
-  box-shadow: 0 2px 8px rgba(106, 130, 251, 0.15);
-}
+
+
+
 
 @media (max-width: 900px) {
   section {
@@ -219,7 +245,13 @@ article ul {
   }
 }
 
-/* Navegação */
+.navbar {
+  min-width: 40ch;
+  padding: 0 2vw;
+  text-align: left;
+}
+
+
 nav ul {
   display: flex;
   justify-content: center;

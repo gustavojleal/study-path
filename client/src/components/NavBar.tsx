@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Search from './Search';
+import SearchBox from './SearchBox';
 import LanguageSwitch from './LanguageSwitch';
 
 
@@ -18,6 +18,11 @@ const NavBar = () => {
   const handleLanguageChange = (langCode: string) => {
     i18n.changeLanguage(langCode);
   };
+
+  const handleSearchSubmit = (searchTerm: string) => {
+    console.log(`Searching for: ${searchTerm}`);
+
+  };
   return (
     <div>
 
@@ -25,7 +30,12 @@ const NavBar = () => {
         <ul>
           <li><Link to="/HomePage">Study Path</Link></li>
           <li><Link to="/CoursesPage">{t("header.links.courses")}</Link></li>
-          <li className="search-courses"><Search /></li>
+          <li><SearchBox
+            placeHolder={t("header.search.placeholder")}
+            onSubmit={handleSearchSubmit}
+            ariaLabel={t("header.search.ariaLabel")}
+            darkMode={true} // Defina como true se estiver usando tema escuro
+          /></li>
           <li className="language-switch-container">
             <LanguageSwitch
               languages={languages}

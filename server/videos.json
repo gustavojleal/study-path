@@ -1,0 +1,52 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "title": "Introduction to JavaScript",
+      "description": "Learn the basics of JavaScript, the programming language of the web.",
+      "url": "https://g.co/gemini/share/a36d9d122b37",
+      "thumbnail": "https://example.com/thumbnails/intro-to-js.jpg",
+      "duration": 300
+    },
+    {
+      "id": 2,
+      "title": "Advanced CSS Techniques",
+      "description": "Explore advanced techniques in CSS for better styling.",
+      "url": "https://g.co/gemini/share/9d8141fbd3d6",
+      "thumbnail": "https://example.com/thumbnails/advanced-css.jpg",
+      "duration": 450
+    },
+    {
+      "id": 3,
+      "title": "Building Responsive Web Applications",
+      "description": "Learn how to build responsive web applications that work on any device.",
+      "url": "https://example.com/videos/responsive-web.mp4",
+      "thumbnail": "https://example.com/thumbnails/responsive-web.jpg",
+      "duration": 600
+    },
+    {
+      "id": 4,
+      "title": "Algorithms and Data Structures",
+      "description": "A comprehensive guide to understanding and using React for web development.",
+      "url": "https://g.co/gemini/share/e1b908976724",
+      "thumbnail": "https://example.com/thumbnails/understanding-react.jpg",
+      "duration": 720
+    },
+    {
+      "id": 5,
+      "title": "Data Structures",
+      "description": "An introduction to Node.js, a JavaScript runtime built on Chrome's V8 engine.",
+      "url": "https://g.co/gemini/share/ea884d65759d",
+      "thumbnail": "https://example.com/thumbnails/nodejs-beginners.jpg",
+      "duration": 540
+    },
+    {
+      "id": 6,
+      "title": "Understanding React",
+      "description": "A comprehensive guide to understanding and using React for web development.",
+      "url": "https://pollo.ai/v/cmbianf8j04sq14chqgx0l46j?source=share",
+      "thumbnail": "https://example.com/thumbnails/understanding-react.jpg",
+      "duration": 480
+    }
+  ]
+}

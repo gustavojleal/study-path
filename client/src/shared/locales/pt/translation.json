@@ -10,6 +10,10 @@
       "about": "Sobre",
       "contact": "Contato",
       "courses": "Cursos"
+    },
+    "search": {
+      "placeholder": "Pesquisar cursos...",
+      "arialLabel": "Pesquisar cursos"
     }
   },
   "home": {
