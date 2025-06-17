@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import CourseCategoryList from '../components/CourseCategoryList';
 
 
 const HomePage = () => {
@@ -7,7 +8,7 @@ const HomePage = () => {
   return (
     <div className="main">
       <h1>{t("welcome")}</h1>
-      <p>{t("text")}</p>
+      < CourseCategoryList />
     </div>
   );
 }

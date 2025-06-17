@@ -1,5 +1,5 @@
 // src/app/routing/Router.tsx
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, useLocation } from 'react-router-dom';
 import MainLayout from '@/app/layouts/MainLayout';
 import HomePage from '@/pages/HomePage';
 import AboutPage from '@/pages/AboutPage';
@@ -23,8 +23,13 @@ const router = createBrowserRouter([
         element: <AboutPage />
       },
       {
-        path: 'coursespage',
-        element: <CoursesPage />
+        path: '/Coursespage',
+        element: <CoursesPage />,
+        loader: ({ request }) => {
+          const url = new URL(request.url);
+          const state = url.state || "";
+          return { category: state.category || "" }; // Retorna a categoria ou uma string vazia
+        }
       },
 
     ]

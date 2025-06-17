@@ -101,18 +101,6 @@ body {
 
 
 
-@media (max-width: 900px) {
-  section {
-    flex-direction: column;
-    gap: 1rem;
-    margin: 1rem 0;
-  }
-
-  .search-courses {
-    max-width: 100%;
-    margin: 0.5rem 0;
-  }
-}
 
 main {
   width: 96vw;
@@ -226,24 +214,7 @@ article ul {
   list-style: none;
 }
 
-@media (max-width: 600px) {
 
-  main,
-  article,
-  .card {
-    padding: 1rem;
-  }
-
-  .mainheader {
-    padding: 16px 0;
-  }
-
-  footer {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-}
 
 .navbar {
   min-width: 40ch;
@@ -377,6 +348,28 @@ input:focus {
   font-size: 1rem;
 }
 
+.card {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.course-category-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
 @media (max-width: 800px) {
   section {
     flex-direction: column;
@@ -390,5 +383,53 @@ input:focus {
   input,
   #button {
     width: 100%;
+  }
+
+
+}
+
+@media (max-width: 900px) {
+  section {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .search-courses {
+    max-width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .course-category-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+
+  main,
+  article,
+  .card {
+    padding: 1rem;
+  }
+
+  .mainheader {
+    padding: 16px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .course-category-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .course-category-list {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

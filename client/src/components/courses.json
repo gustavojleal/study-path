@@ -1,0 +1,134 @@
+{
+  "data": [
+    {
+      "course": "Python for Data Science",
+      "categories": [
+        {
+          "name": "dataScience",
+          "level": "essential"
+        },
+        {
+          "name": "artificialIntelligence",
+          "level": "essential"
+        },
+        {
+          "name": "softwareDevelopment",
+          "level": "recommended"
+        }
+      ]
+    },
+    {
+      "course": "Foundations of Machine Learning",
+      "categories": [
+        {
+          "name": "dataScience",
+          "level": "essential"
+        },
+        {
+          "name": "artificialIntelligence",
+          "level": "essential"
+        }
+      ]
+    },
+    {
+      "course": "Web Development with JavaScript and React",
+      "categories": [
+        {
+          "name": "softwareDevelopment",
+          "level": "essential"
+        },
+        {
+          "name": "cloudComputing",
+          "level": "recommended"
+        }
+      ]
+    },
+    {
+      "course": "Cloud Computing Fundamentals (AWS, Azure, or GCP)",
+      "categories": [
+        {
+          "name": "cloudComputing",
+          "level": "essential"
+        },
+        {
+          "name": "softwareDevelopment",
+          "level": "recommended"
+        }
+      ]
+    },
+    {
+      "course": "Programming with Arduino and Raspberry Pi",
+      "categories": [
+        {
+          "name": "internetOfThings",
+          "level": "essential"
+        },
+        {
+          "name": "softwareDevelopment",
+          "level": "recommended"
+        }
+      ]
+    },
+    {
+      "course": "Neural Networks and Deep Learning with TensorFlow",
+      "categories": [
+        {
+          "name": "artificialIntelligence",
+          "level": "essential"
+        },
+        {
+          "name": "dataScience",
+          "level": "recommended"
+        }
+      ]
+    },
+    {
+      "course": "SQL and Relational Databases",
+      "categories": [
+        {
+          "name": "dataScience",
+          "level": "essential"
+        },
+        {
+          "name": "softwareDevelopment",
+          "level": "essential"
+        }
+      ]
+    },
+    {
+      "course": "Introduction to IoT and Communication Protocols (MQTT, HTTP)",
+      "categories": [
+        {
+          "name": "internetOfThings",
+          "level": "essential"
+        },
+        {
+          "name": "cloudComputing",
+          "level": "recommended"
+        }
+      ]
+    },
+    {
+      "course": "MLOps and AI Model Deployment",
+      "categories": [
+        {
+          "name": "cloudComputing",
+          "level": "essential"
+        },
+        {
+          "name": "artificialIntelligence",
+          "level": "recommended"
+        }
+      ]
+    },
+    {
+      "course": "Software Engineering and Best Coding Practices",
+      "categories": [
+        {
+          "name": "softwareDevelopment",
+          "level": "essential"
+        }
+      ]
+    }
+  ]
+}

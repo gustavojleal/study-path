@@ -1,8 +1,15 @@
-const CoursesPage = () => {
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+import CoursesList from '../components/CoursesList';
+
+const CoursesPage = (courseCategory: string) => {
+  const location = useLocation();
+  const category = (location.state as { category?: string })?.category;
   return (
-    <div>
-      <h1>Courses Page</h1>
-      <p>Welcome to the Courses Page!</p>
+    <div className="main">
+      <h1>{"Cursos"}</h1>
+      <CoursesList courseCategory={category} />
+
     </div>
   );
 }

@@ -36,7 +36,56 @@
     "text": "© 2023 Study Path. Todos os direitos reservados."
   },
   "courses": {
-    "title": "Cursos",
-    "description": "Explore nossa ampla gama de cursos projetados para ajudá-lo a aprender e crescer."
+    "title": {
+      "Python for Data Science": "Python para Ciência de Dados",
+      "Foundations of Machine Learning": "Fundamentos de Machine Learning",
+      "Web Development with JavaScript and React": "Desenvolvimento Web com JavaScript e React",
+      "Cloud Computing Fundamentals (AWS, Azure, or GCP)": "Fundamentos de Computação em Nuvem (AWS, Azure ou GCP)",
+      "Programming with Arduino and Raspberry Pi": "Programação com Arduino e Raspberry Pi",
+      "Neural Networks and Deep Learning with TensorFlow": "Redes Neurais e Deep Learning com TensorFlow",
+      "SQL and Relational Databases": "SQL e Bancos de Dados Relacionais",
+      "Introduction to IoT and Communication Protocols (MQTT, HTTP)": "Introdução ao IoT e Protocolos de Comunicação (MQTT, HTTP)",
+      "MLOps and AI Model Deployment": "MLOps e Deploy de Modelos de IA",
+      "Software Engineering and Best Coding Practices": "Engenharia de Software e Boas Práticas de Código"
+    },
+    "description": {
+      "Python for Data Science": "Aprenda a usar Python para análise de dados, visualização e machine learning.",
+      "Foundations of Machine Learning": "Explore os conceitos fundamentais de machine learning e suas aplicações.",
+      "Web Development with JavaScript and React": "Desenvolva aplicações web modernas usando JavaScript e React.",
+      "Cloud Computing Fundamentals (AWS, Azure, or GCP)": "Entenda os princípios da computação em nuvem com foco em AWS, Azure ou GCP.",
+      "Programming with Arduino and Raspberry Pi": "Descubra como programar dispositivos IoT com Arduino e Raspberry Pi.",
+      "Neural Networks and Deep Learning with TensorFlow": "Mergulhe no mundo das redes neurais e deep learning usando TensorFlow.",
+      "SQL and Relational Databases": "Aprenda SQL e como trabalhar com bancos de dados relacionais.",
+      "Introduction to IoT and Communication Protocols (MQTT, HTTP)": "Introdução ao Internet das Coisas (IoT) e protocolos de comunicação como MQTT e HTTP.",
+      "MLOps and AI Model Deployment": "Explore práticas de MLOps e como implantar modelos de IA em produção.",
+      "Software Engineering and Best Coding Practices": "Aprenda as melhores práticas de engenharia de software e desenvolvimento de código."
+    }
+  },
+  "categories": {
+    "titles": {
+      "dataScience": "Ciência de Dados",
+      "machineLearning": "Aprendizado de Máquina",
+      "webDevelopment": "Desenvolvimento Web",
+      "mobileDevelopment": "Desenvolvimento Móvel",
+      "cloudComputing": "Computação em Nuvem",
+      "devOps": "DevOps",
+      "blockchain": "Blockchain",
+      "internetOfThings": "Internet das Coisas (IoT)",
+      "computationalLinguistics": "Linguística Computacional",
+      "humanComputerInteraction": "Interação Humano-Computador (HCI)",
+      "artificialIntelligence": "Inteligência Artificial",
+      "softwareDevelopment": "Desenvolvimento de Software"
+    },
+    "descriptions": {
+      "dataScience": "Aprenda a analisar e interpretar dados complexos para tomar decisões informadas.",
+      "machineLearning": "Descubra os princípios do aprendizado de máquina e como aplicá-los a problemas do mundo real.",
+      "webDevelopment": "Crie sites dinâmicos e responsivos usando as últimas tecnologias web.",
+      "mobileDevelopment": "Desenvolva aplicativos móveis para plataformas iOS e Android.",
+      "cloudComputing": "Entenda os conceitos de computação em nuvem e como aproveitar os serviços em nuvem.",
+      "devOps": "Aprenda sobre práticas e ferramentas DevOps para melhorar a colaboração entre equipes de desenvolvimento e operações.",
+      "humanComputerInteraction": "Explore como as pessoas interagem com a tecnologia e como projetar interfaces amigáveis.",
+      "artificialIntelligence": "Mergulhe no mundo da inteligência artificial e descubra como as máquinas podem aprender e tomar decisões.",
+      "softwareDevelopment": "Aprenda as melhores práticas de desenvolvimento de software, desde a codificação até o teste e manutenção."
+    }
   }
 }
